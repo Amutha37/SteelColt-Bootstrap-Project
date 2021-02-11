@@ -1,0 +1,10 @@
+header a:link {
+  font-size: 30px;
+  color: teal;
+}
+
+p#dislikes a:link {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: red;
+}

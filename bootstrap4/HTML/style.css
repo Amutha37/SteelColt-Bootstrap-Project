@@ -1,0 +1,12 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1e9f63;
+  font-style: italic;
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+#para2 {
+  font-style: italic;
+}

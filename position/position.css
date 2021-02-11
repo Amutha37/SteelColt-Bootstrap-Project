@@ -1,0 +1,46 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(92, 103, 205);
+  border: 2px solid #000;
+  margin: 20px;
+  /* display: flex; */
+  display: inline-block;
+}
+.middle {
+  background-color: #81b29a;
+}
+/* this is the default setting which does not change even without the settings  */
+#static .middle {
+  position: static;
+  top: 100px;
+}
+/* relative to normal position  */
+#relative1 .middle {
+  position: relative;
+  top: 60px;
+  left: 100px;
+  /* font-size: 5px; */
+}
+/* relative to normal position with -100  */
+#relative2 .middle {
+  position: relative;
+  /* the negative is positioning opposite side of positive positioning  */
+  top: -110px;
+  left: 80px;
+}
+#obsolute {
+  position: relative;
+}
+#obsolute1 .middle {
+  position: obsolute;
+  bottom: 1px;
+  left: 1px;
+  /* font-size: 5px; */
+}
+#fixed .middle {
+  position: fixed;
+
+  top: 0px;
+  left: 400px;
+}

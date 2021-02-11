@@ -1,0 +1,10 @@
+.pink {
+  background-color: pink;
+  border: 1px solid blue;
+}
+.orange {
+  background-color: orange;
+  border: 1px solid green;
+  height: 50px;
+  font-size: 12px;
+}

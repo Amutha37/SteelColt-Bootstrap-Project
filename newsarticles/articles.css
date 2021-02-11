@@ -1,0 +1,33 @@
+body {
+  border: 20px solid #a3a1a1;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  width: 80%;
+  /* margin: 80% */
+  font-family: "Source Sans Pro", sans-serif;
+}
+h4 {
+  /* margin-top: 2px; */
+  letter-spacing: 0.2rem;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #89cae4;
+}
+h2 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Roboto Slab", serif;
+}
+.borleft {
+  padding-left: 5px;
+  border-left: 4px solid rgb(196, 191, 191);
+}
+.article1 {
+  border-bottom: 50% solid rgb(88, 86, 86);
+}
+hr {
+  width: 80%;
+  height: 0.2px;
+  background-color: rgb(201, 197, 204);
+}

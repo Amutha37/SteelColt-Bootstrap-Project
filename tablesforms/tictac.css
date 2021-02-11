@@ -1,0 +1,22 @@
+td {
+  width: 150px;
+  height: 150px;
+}
+.vertical {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.horizontal {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+table {
+  margin: auto;
+  background-color: pink;
+  /* border-collapse: collapse; */
+  border: 1px solid black;
+}
+h1 {
+  text-align: center;
+}

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid and Flexbox</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- container class set right and left margin and leaves the content in the middle frame  -->
+
+    <div class="container-fluid">
+      <!-- display-3 is similar to h1 to h6 gives the font size  -->
+
+      <h1 class="text-center display-6">Grid + Flexbox</h1>
+
+      <!-- Making 2 column using column small 6  add up to 12 column justify-content-end send it to left most  -->
+      <p class="mt-5">SAMPLE 1</p>
+      <div class="row border border-warning justify-content-end">
+        <div class="col-sm-6 bg-info">
+          (MAIN DIV = row border border-warning justify-content-end / DIV =
+          col-sm-6 bg-info) Lorem ipsum dolor sit amet, consectetur
+          justify-content-end mt-5 Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Possimus est autem odit nam! Praesentium facilis,
+          sed quaerat est, fugiat fugit a incidunt perspiciatis laborum
+        </div>
+      </div>
+
+      <!-- moving the content to right or left using justify content-start sent to right most  -->
+      <p class="mt-5">SAMPLE 2</p>
+      <div class="row border border-danger justify-content-start">
+        <!-- <div class="col-sm-6"></div> -->
+        <div class="col-sm-6 bg-info">
+          ( MAIN DIV = row border border-danger justify-content-start/ DIV =
+          col-sm-6 bg-info) Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Possimus est autem odit nam! Praesentium facilis, sed quaerat
+          est, fugiat fugit a incidunt perspiciatis laborum pariatur quisquam
+        </div>
+      </div>
+      <!-- justify-context-center leaving both left right to 3 and 3 colum on small  -->
+      <p class="mt-5">SAMPLE 3</p>
+      <div class="row border border-success justify-content-center">
+        <!-- <div class="col-sm-6"></div> -->
+        <div class="col-sm-6 bg-info">
+          (MAIN DIV = row border border-success justify-content-center / DIV =
+          col-sm-6 bg-info )Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Possimus est autem odit nam! Praesentium facilis, sed quaerat
+          est, fugiat fugit a incidunt perspiciatis laborum pariatur quisquam
+          alias accusantium dolor obcaecati.
+        </div>
+      </div>
+      <!-- making colum small 3 for the text  -->
+      <p class="mt-5">SAMPLE 4</p>
+      <div class="row border border-dark justify-content-center">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-warning">
+          (MAIN DIV = row border border-dark justify-content-center/ DIV =
+          col-sm-3 bg-warning) Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Possimus est autem odit nam! Praesentium facilis,
+          sed quaerat est, fugiat fugit a incidunt perspiciatis laborum pariatur
+          quisquam alias accusantium dolor obcaecati.
+        </div>
+        <div class="col-sm-3 bg-success">
+          (DIV = col-sm-3 bg-warning ) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam! Praesentium
+          facilis, sed quaerat est, fugiat fugit a incidunt perspiciatis laborum
+          pariatur quisquam alias accusantium dolor obcaecati.
+        </div>
+      </div>
+      <!-- justify-content-between  -->
+      <!-- making colum small 3 for the text  -->
+      <p class="mt-5">SAMPLE 5</p>
+      <div class="row border border-dark justify-content-between mb-3">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-primary">
+          (MAIN DIV = row border border-dark justify-content-between mb-3
+          mt-5/DIV =col-sm-3 bg-primary ) Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus
+        </div>
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-warning ) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- justify-content-between sharing with 3 divs  -->
+      <!-- making colum small 3 with 3 div with text   -->
+      <p class="mt-5">SAMPLE 6</p>
+      <div class="row border border-dark justify-content-between">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-primary">
+          (MAIN DIV 1 = "row border border-dark justify-content-between mt-5/
+          DIV = col-sm-3 bg-primary) Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Possimus est autem odit nam! Praesentiu
+        </div>
+        <div class="col-sm-3 bg-success">
+          (DIV = col-sm-3 bg-success) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-warning)maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- justify-content-around  sharing with 3 divs this make a space on the right and left -->
+      <!-- making colum small 3 with 3 div with text   -->
+      <p class="mt-5">SAMPLE 7</p>
+      <div class="row border border-dark justify-content-around mb-3">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-primary">
+          (MAIN DIV 1 = "row border border-dark justify-content-around mb-3
+          mt-5/ DIV = col-sm-3 bg-primary) Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam! Praesentiu
+        </div>
+        <div class="col-sm-3 bg-success">
+          (DIV = col-sm-3 bg-success) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-warning) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- The view Having longer text with one of the column -->
+      <!-- without align-items-start   -->
+      <p class="mt-5">SAMPLE 8</p>
+      <div class="row border border-dark justify-content-around">
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-danger">
+          (MAIN DIV 1 = "row border border-dark justify-content-around mt-5/ DIV
+          = col-sm-3 bg-danger) Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Possimus est autem odit nam! Praesentiu
+        </div>
+        <div class="col-sm-3 bg-success">
+          (DIV = col-sm-3 bg-warning) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam!
+        </div>
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-success) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam! Praesentium
+          facilis, sed quaerat est, fugiat fugit a incidunt perspiciatis laborum
+          pariatur quisquam alias accusantium dolor obcaecati.
+        </div>
+      </div>
+      <!-- row end  -->
+
+      <!-- The view Having longer text with one of the column -->
+      <!-- with  align-items-start   -->
+      <p class="mt-5">SAMPLE 8</p>
+      <div
+        class="row border border-dark justify-content-around align-items-start"
+      >
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-primary text-warning">
+          (MAIN DIV 1 = row border border-dark justify-content-around
+          align-items-start mt-5 / DIV = col-sm-3 bg-primary text-warning)
+          align-items-start Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Possimus est autem odit nam! Praesentiu
+        </div>
+        <div class="col-sm-3 bg-success text-white">
+          (DIV = col-sm-3 bg-success text-white) align-items-start
+          align-items-start align-items-start align-items-start
+        </div>
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-warning text-white) maximum Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Possimus est autem odit nam!
+          Praesentium facilis, sed quaerat est, fugiat fugit a incidunt
+          perspiciatis laborum pariatur quisquam alias accusantium dolor
+          obcaecati.
+        </div>
+      </div>
+      <!-- The view Having longer text with one of the column -->
+      <!-- with  align-items-end   -->
+      <p class="mt-5">SAMPLE 9</p>
+      <div
+        class="row border border-warning justify-content-around align-items-end"
+      >
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-success">
+          (MAIN DIV 1 = row border border-warning justify-content-around
+          align-items-end mt-5 / DIV = col-sm-3 bg-info ) align-items-end Lorem
+          ipsum dolor sit amet, consectetur adipisicing elit. Possimus est autem
+          odit nam! Praesentiu
+        </div>
+
+        <div class="col-sm-3 bg-info text-white">
+          (DIV = col-sm-3 bg-info text-white) maximum Lorem ipsum dolor sit
+          amet, consectetur adipisicing elit. Possimus est autem odit nam!
+          Praesentium facilis, sed quaerat est, fugiat fugit a incidunt
+          perspiciatis laborum pariatur quisquam alias accusantium dolor
+          obcaecati.
+        </div>
+        <div class="col-sm-3 bg-success text-white">
+          (DIV = col-sm-3 bg-info text-white) align-items-end align-items-end
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- justify-content-center -->
+      <!-- with  align-items-center   -->
+      <p class="mt-5">SAMPLE 10</p>
+      <div
+        class="row border border-primary justify-content-center align-items-center"
+      >
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-info">
+          (MAIN DIV 1 = row border border-primary justify-content-center
+          align-items-center mt-5 / DIV = col-sm-3 bg-info) Lorem ipsum dolor
+          sit amet, consectetur adipisicing elit. Possimus est autem odit nam!
+          Praesentiu
+        </div>
+
+        <div class="col-sm-3 bg-warning">
+          ( DIV = col-sm-3 bg-warning) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam! Praesentium
+          facilis, sed quaerat est, fugiat fugit a incidunt perspiciatis laborum
+          pariatur quisquam alias accusantium dolor obcaecati.
+        </div>
+        <div class="col-sm-3 bg-info">
+          ( DIV = col-sm-3 bg-info)align-items-center align-items-center
+          align-items-center align-items-center
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- row end  -->
+      <!-- justify-content-between -->
+      <!-- with  align-items-center   -->
+      <p class="mt-5">SAMPLE 11</p>
+      <div
+        class="row border border-dark justify-content-between align-items-center mb-3"
+      >
+        <!-- <div class="col-sm-3"></div> -->
+        <div class="col-sm-3 bg-info">
+          (MAIN DIV 1 = row border border-dark justify-content-between
+          align-items-center mb-3 mt-5 / DIV = col-sm-3 bg-info ) Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Possimus est autem odit
+          nam! Praesentiu
+        </div>
+
+        <div class="col-sm-3 bg-warning">
+          (DIV = col-sm-3 bg-warning) maximum Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Possimus est autem odit nam! Praesentium
+          facilis, sed quaerat est, fugiat fugit a incidunt perspiciatis laborum
+          pariatur quisquam alias accusantium dolor obcaecati.
+        </div>
+        <div class="col-sm-3 bg-info">
+          (DIV = col-sm-3 bg-info) align-items-center and justify-content-center
+          align-items-center align-items-center align-items-center
+        </div>
+      </div>
+      <!-- row end  -->
+      <!-- justify-content-center and overiding with self -->
+      <!-- with  align-self-end and individual div control position    -->
+      <p class="mt-5">SAMPLE 12</p>
+      <div
+        class="row border border-danger justify-content-center align-items-end"
+      >
+        <!-- <div class="col-2"></div> -->
+
+        <div class="col-2 bg-info align-self-center">
+          (MAIN DIV 1 = row border border-danger justify-content-center
+          align-items-end / DIV = col-2 bg-info align-self-center ) Possimus est
+          autem odit nam! Praesentium facilis, sed quaerat
+        </div>
+        <div class="col-2 bg-warning">
+          (DIV = col-2 bg-warning )align-items-center and r maximum Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Possimus est autem odit
+          nam! Praesentium facilis, sed quaerat est, fugiat fugit a incidunt.
+        </div>
+        <div class="col-2 bg-danger align-self-start">
+          (DIV = col-2 bg-danger align-self-start ) justify-content-center and
+          align-self-start --- justify-content-center
+        </div>
+        <div class="col-2 bg-success align-self-center">
+          (DIV = col-2 bg-success align-self-center ) align-self-center
+          align-self-center align-self-center
+        </div>
+
+        <div class="col-2 bg-info">
+          (DIV = col-2 bg-info) justify-content-center and align-self-end
+        </div>
+
+        <!-- heart shape icons  -->
+        <!-- <div>
+          <i class="fas fa-heart fa-lg text-danger"></i>
+        </div> -->
+        <!-- heart shape end div  -->
+      </div>
+      <!-- row end  -->
+      <!-- starting at medium screen without gap but when large with 5 column it leave space and that space can be adjusdted with justify-content anywhere  -->
+      <p class="mt-5">SAMPLE 13</p>
+      <div
+        class="row text-center justify-content-between border border-warning"
+      >
+        <!-- <div class="betweendiv"> -->
+        <div class="col-md-6 col-lg-5 bg-success">
+          (MAIN DIV 1 = row text-center justify-content-between border
+          border-warning / DIV = col-md-6 col-lg-5 bg-success )Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Aspernatur laborum nostrum
+          placeat officiis cumque. Temporibus
+        </div>
+        <!-- font icons size  -->
+        <!-- <div style="font-size: 0.5rem;">
+            <i class="fas fa-camera fa-xs"></i>
+            <i class="fas fa-camera fa-sm"></i>
+            <i class="fas fa-camera fa-lg"></i>
+            <i class="fas fa-camera fa-2x"></i>
+            <i class="fas fa-camera fa-3x"></i>
+            <i class="fas fa-camera fa-5x"></i>
+            <i class="fas fa-camera fa-7x"></i>
+            <i class="fas fa-camera fa-10x"></i>
+          </div> -->
+        <!-- font icons size  -->
+        <!-- heart shape icons  -->
+        <div>
+          <p></p>
+          <i class="fas fa-heart fa-2x text-danger mt-4"></i>
+        </div>
+        <!-- <i class="far fa-heart text-danger"></i> -->
+        <div class="col-md-6 col-lg-5 bg-warning align-items-end">
+          (DIV = col-md-6 col-lg-5 bg-warning )col-md-6 col-lg-5 bg-success
+          col-md-6 col-lg-5 bg-success col-md-6 col-lg-5 bg-success
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+</html>

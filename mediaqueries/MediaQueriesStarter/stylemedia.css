@@ -1,0 +1,61 @@
+body {
+  font-family: "serif, Open San", Arial, Helvetica, sans-serif;
+}
+nav {
+  text-align: center;
+}
+h1 {
+  font-size: 6em;
+  text-align: center;
+}
+h5,
+h6 {
+  font-size: 2em;
+}
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+/* media queries  */
+@media (min-width: 800px) {
+  h1 {
+    color: #008029;
+  }
+  h6,
+  h5 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3em;
+    color: #b14e24;
+  }
+}
+/* h5 and h6 change betwwen the width size */
+@media (min-width: 600px) and (max-width: 800px) {
+  h5 {
+    background-color: #686738;
+  }
+  h6 {
+    display: none;
+  }
+}
+
+/* controling h6  */
+@media (max-width: 600px) {
+  h6 {
+    background-color: #b14e24;
+  }
+  h5 {
+    display: none;
+  }
+}
+@media (orientation: landscape) {
+  body {
+    background-color: rgb(233, 133, 188);
+  }
+}
